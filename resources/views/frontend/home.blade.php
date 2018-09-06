@@ -30,16 +30,16 @@
                             Add to Cart
                         </a>
                         <a href="#">
-                            <img src="http://i.imgur.com/Mcw06Yt.png"/>
+                            <img src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c05551586.png"/>
                         </a>
                     </div>
                     <a href="#">
                         <h3>
-                            Kickin with Kraken Tee
+                            OMEN Laptop
                         </h3>
                     </a>
                     <h5>
-                        $19.99
+                        $1999.99
                     </h5>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin posuere sem enim, accumsan convallis risus semper.
@@ -53,16 +53,16 @@
                             Add to Cart
                         </a>
                         <a href="#">
-                            <img src="http://i.imgur.com/Mcw06Yt.png"/>
+                            <img src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c05551586.png"/>
                         </a>
                     </div>
                     <a href="#">
                         <h3>
-                            Kickin with Kraken Tee
+                            OMEN Laptop
                         </h3>
                     </a>
                     <h5>
-                        $19.99
+                        $1999.99
                     </h5>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin posuere sem enim, accumsan convallis risus semper.
@@ -76,16 +76,16 @@
                             Add to Cart
                         </a>
                         <a href="#">
-                            <img src="http://i.imgur.com/Mcw06Yt.png"/>
+                            <img src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c05551586.png"/>
                         </a>
                     </div>
                     <a href="#">
                         <h3>
-                            Kickin with Kraken Tee
+                            OMEN Laptop
                         </h3>
                     </a>
                     <h5>
-                        $19.99
+                        $1999.99
                     </h5>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin posuere sem enim, accumsan convallis risus semper.
@@ -99,16 +99,16 @@
                             Add to Cart
                         </a>
                         <a href="#">
-                            <img src="http://i.imgur.com/Mcw06Yt.png"/>
+                            <img src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c05551586.png"/>
                         </a>
                     </div>
                     <a href="#">
                         <h3>
-                            Kickin with Kraken Tee
+                            OMEN Laptop 
                         </h3>
                     </a>
                     <h5>
-                        $19.99
+                        $1999.99
                     </h5>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin posuere sem enim, accumsan convallis risus semper.
