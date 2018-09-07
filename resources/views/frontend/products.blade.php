@@ -8,6 +8,7 @@
 <!-- products listing -->
 <!-- Latest SHirts -->
 <div class="row">
+    @forelse($products as $product)
     <div class="small-3 columns">
         <div class="item-wrapper">
             <div class="img-wrapper">
@@ -15,180 +16,25 @@
                     Add to Cart
                 </a>
                 <a href="#">
-                    <img src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c05551586.png"/>
+                    <img src="{{ url('images',$product->image) }}"/>
                 </a>
             </div>
             <a href="{{ route('product') }}">
                 <h3>
-                    HP OMEN Mother of gaming
+                    {{$product->name}}
                 </h3>
             </a>
             <h5>
-                $1999.99
+                $ {{$product->price}}
             </h5>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                {{$product->description}}
             </p>
         </div>
+        @empty 
+        <h3>No Products</h3>
+        
     </div>
-    <div class="small-3 columns">
-        <div class="item-wrapper">
-            <div class="img-wrapper">
-                <a class="button expanded add-to-cart">
-                    Add to Cart
-                </a>
-                <a href="#">
-                    <img src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c05551586.png"/>
-                </a>
-            </div>
-            <a href="{{ route('product') }}">
-                <h3>
-                    HP OMEN Mother of gaming
-                </h3>
-            </a>
-            <h5>
-                $1999.99
-            </h5>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            </p>
-        </div>
-    </div>
-    <div class="small-3 columns">
-        <div class="item-wrapper">
-            <div class="img-wrapper">
-                <a class="button expanded add-to-cart">
-                    Add to Cart
-                </a>
-                <a href="">
-                    <img src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c05551586.png"/>
-                </a>
-            </div>
-            <a href="{{ route('product') }}">
-                <h3>
-                    HP OMEN Mother of gaming
-                </h3>
-            </a>
-            <h5>
-                $1999.99
-            </h5>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            </p>
-        </div>
-    </div>
-    <div class="small-3 columns">
-        <div class="item-wrapper">
-            <div class="img-wrapper">
-                <a class="button expanded add-to-cart">
-                    Add to Cart
-                </a>
-                <a href="#">
-                    <img src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c05551586.png"/>
-                </a>
-            </div>
-            <a href="{{ route('product') }}">
-                <h3>
-                    HP OMEN Mother of gaming
-                </h3>
-            </a>
-            <h5>
-                $1999.99
-            </h5>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            </p>
-        </div>
-    </div>
-    <div class="small-3 columns">
-        <div class="item-wrapper">
-            <div class="img-wrapper">
-                <a class="button expanded add-to-cart">
-                    Add to Cart
-                </a>
-                <a href="#">
-                    <img src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c05551586.png"/>
-                </a>
-            </div>
-            <a href="{{ route('product') }}">
-                <h3>
-                    HP OMEN Mother of gaming
-                </h3>
-            </a>
-            <h5>
-                $1999.99
-            </h5>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            </p>
-        </div>
-    </div>
-    <div class="small-3 columns">
-        <div class="item-wrapper">
-            <div class="img-wrapper">
-                <a class="button expanded add-to-cart">
-                    Add to Cart
-                </a>
-                <a href="#">
-                    <img src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c05551586.png"/>
-                </a>
-            </div>
-            <a href="{{ route('product') }}">
-                <h3>
-                    HP OMEN Mother of gaming
-                </h3>
-            </a>
-            <h5>
-                $1999.99
-            </h5>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            </p>
-        </div>
-    </div><div class="small-3 columns">
-        <div class="item-wrapper">
-            <div class="img-wrapper">
-                <a class="button expanded add-to-cart">
-                    Add to Cart
-                </a>
-                <a href="{{ route('product') }}">
-                    <img src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c05551586.png"/>
-                </a>
-            </div>
-            <a href="{{ route('product') }}">
-                <h3>
-                    HP OMEN Mother of gaming
-                </h3>
-            </a>
-            <h5>
-                $1999.99
-            </h5>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            </p>
-        </div>
-    </div><div class="small-3 columns">
-        <div class="item-wrapper">
-            <div class="img-wrapper">
-                <a class="button expanded add-to-cart">
-                    Add to Cart
-                </a>
-                <a href="#">
-                    <img src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c05551586.png"/>
-                </a>
-            </div>
-            <a href="{{ route('product') }}">
-                <h3>
-                    HP OMEN Mother of gaming
-                </h3>
-            </a>
-            <h5>
-                $1999.99
-            </h5>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            </p>
-        </div>
-    </div>
+    @endforelse
 </div>
 @endsection

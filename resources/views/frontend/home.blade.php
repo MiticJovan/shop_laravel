@@ -21,8 +21,9 @@
         </h2>
         </div>
        
-        <!-- Latest SHirts -->
+        <!-- Latest Products-->
         <div class="row">
+            @forelse($products->take(4) as $product)
             <div class="small-3 columns">
                 <div class="item-wrapper">
                     <div class="img-wrapper">
@@ -30,91 +31,25 @@
                             Add to Cart
                         </a>
                         <a href="#">
-                            <img src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c05551586.png"/>
+                            <img src="{{ url('images', $product->image) }}"/>
                         </a>
                     </div>
                     <a href="#">
                         <h3>
-                            OMEN Laptop
+                            {{ $product->name }}
                         </h3>
                     </a>
                     <h5>
-                        $1999.99
+                        $ {{$product->price}}
                     </h5>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin posuere sem enim, accumsan convallis risus semper.
+                        {{$product->description}}
                     </p>
                 </div>
             </div>
-            <div class="small-3 columns">
-                <div class="item-wrapper">
-                    <div class="img-wrapper">
-                        <a class="button expanded add-to-cart">
-                            Add to Cart
-                        </a>
-                        <a href="#">
-                            <img src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c05551586.png"/>
-                        </a>
-                    </div>
-                    <a href="#">
-                        <h3>
-                            OMEN Laptop
-                        </h3>
-                    </a>
-                    <h5>
-                        $1999.99
-                    </h5>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin posuere sem enim, accumsan convallis risus semper.
-                    </p>
-                </div>
-            </div>
-            <div class="small-3 columns">
-                <div class="item-wrapper">
-                    <div class="img-wrapper">
-                        <a class="button expanded add-to-cart">
-                            Add to Cart
-                        </a>
-                        <a href="#">
-                            <img src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c05551586.png"/>
-                        </a>
-                    </div>
-                    <a href="#">
-                        <h3>
-                            OMEN Laptop
-                        </h3>
-                    </a>
-                    <h5>
-                        $1999.99
-                    </h5>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin posuere sem enim, accumsan convallis risus semper.
-                    </p>
-                </div>
-            </div>
-            <div class="small-3 columns">
-                <div class="item-wrapper">
-                    <div class="img-wrapper">
-                        <a class="button expanded add-to-cart">
-                            Add to Cart
-                        </a>
-                        <a href="#">
-                            <img src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c05551586.png"/>
-                        </a>
-                    </div>
-                    <a href="#">
-                        <h3>
-                            OMEN Laptop 
-                        </h3>
-                    </a>
-                    <h5>
-                        $1999.99
-                    </h5>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin posuere sem enim, accumsan convallis risus semper.
-                    </p>
-                </div>
-            </div>
+            @empty
+            <h4>No Products</h4>
+            @endforelse
         </div>
         <!-- Footer -->
         <br>

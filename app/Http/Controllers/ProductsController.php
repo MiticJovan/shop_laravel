@@ -15,7 +15,8 @@ class ProductsController extends Controller
      */
     public function index()
     {
-        //
+        $products=Product::all();
+        return view('admin.product.index',compact('products'));
     }
 
     /**
@@ -41,6 +42,7 @@ class ProductsController extends Controller
         //validation
         $this->validate($request,[
             'name'=>'required',
+            'price'=>'required',
             'image'=>'image|mimes:png,jpg,jpeg|max:10000'
         ]);
 
@@ -53,7 +55,7 @@ class ProductsController extends Controller
         }
 
         Product::create($formInput);
-        return redirect()->route('admin.index');
+        return redirect()->route('product.index');
     }
 
     /**
