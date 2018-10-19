@@ -100,7 +100,11 @@ class ProductsController extends Controller
      */
     public function destroy($id)
     {
+<<<<<<< HEAD
         Product::destroy($id);
         return back();
+=======
+        //
+>>>>>>> 2ca2e5726ef7e538fc1f644432fff88a97e72f98
     }
 }

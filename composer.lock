@@ -4,7 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "76fb9d21e0029421e67ed91f8af13e98",
+=======
+    "content-hash": "cfd2100001ed45b6de4c7a24b7cda3ea",
+>>>>>>> 2ca2e5726ef7e538fc1f644432fff88a97e72f98
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -595,6 +599,7 @@
             "time": "2018-02-07T20:20:57+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "gloudemans/shoppingcart",
             "version": "2.5.0",
             "source": {
@@ -655,6 +660,8 @@
             "time": "2018-02-17T09:34:00+00:00"
         },
         {
+=======
+>>>>>>> 2ca2e5726ef7e538fc1f644432fff88a97e72f98
             "name": "jakub-onderka/php-console-color",
             "version": "0.1",
             "source": {
@@ -743,6 +750,7 @@
         },
         {
             "name": "laravel/framework",
+<<<<<<< HEAD
             "version": "v5.6.0",
             "source": {
                 "type": "git",
@@ -779,6 +787,47 @@
                 "symfony/var-dumper": "~4.0",
                 "tijsverkoyen/css-to-inline-styles": "^2.2.1",
                 "vlucas/phpdotenv": "~2.2"
+=======
+            "version": "v5.7.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/framework.git",
+                "reference": "86e1f98a6d2aab018e0257a7cb2ef2110d64a873"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/86e1f98a6d2aab018e0257a7cb2ef2110d64a873",
+                "reference": "86e1f98a6d2aab018e0257a7cb2ef2110d64a873",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/inflector": "^1.1",
+                "dragonmantank/cron-expression": "^2.0",
+                "erusev/parsedown": "^1.7",
+                "ext-mbstring": "*",
+                "ext-openssl": "*",
+                "league/flysystem": "^1.0.8",
+                "monolog/monolog": "^1.12",
+                "nesbot/carbon": "^1.26.3",
+                "php": "^7.1.3",
+                "psr/container": "^1.0",
+                "psr/simple-cache": "^1.0",
+                "ramsey/uuid": "^3.7",
+                "swiftmailer/swiftmailer": "^6.0",
+                "symfony/console": "^4.1",
+                "symfony/debug": "^4.1",
+                "symfony/finder": "^4.1",
+                "symfony/http-foundation": "^4.1",
+                "symfony/http-kernel": "^4.1",
+                "symfony/process": "^4.1",
+                "symfony/routing": "^4.1",
+                "symfony/var-dumper": "^4.1",
+                "tijsverkoyen/css-to-inline-styles": "^2.2.1",
+                "vlucas/phpdotenv": "^2.2"
+            },
+            "conflict": {
+                "tightenco/collect": "<5.5.33"
+>>>>>>> 2ca2e5726ef7e538fc1f644432fff88a97e72f98
             },
             "replace": {
                 "illuminate/auth": "self.version",
@@ -808,6 +857,7 @@
                 "illuminate/support": "self.version",
                 "illuminate/translation": "self.version",
                 "illuminate/validation": "self.version",
+<<<<<<< HEAD
                 "illuminate/view": "self.version",
                 "tightenco/collect": "self.version"
             },
@@ -842,11 +892,54 @@
                 "symfony/css-selector": "Required to use some of the crawler integration testing tools (~4.0).",
                 "symfony/dom-crawler": "Required to use most of the crawler integration testing tools (~4.0).",
                 "symfony/psr-http-message-bridge": "Required to psr7 bridging features (~1.0)."
+=======
+                "illuminate/view": "self.version"
+            },
+            "require-dev": {
+                "aws/aws-sdk-php": "^3.0",
+                "doctrine/dbal": "^2.6",
+                "filp/whoops": "^2.1.4",
+                "league/flysystem-cached-adapter": "^1.0",
+                "mockery/mockery": "^1.0",
+                "moontoast/math": "^1.1",
+                "orchestra/testbench-core": "3.7.*",
+                "pda/pheanstalk": "^3.0",
+                "phpunit/phpunit": "^7.0",
+                "predis/predis": "^1.1.1",
+                "symfony/css-selector": "^4.1",
+                "symfony/dom-crawler": "^4.1",
+                "true/punycode": "^2.1"
+            },
+            "suggest": {
+                "aws/aws-sdk-php": "Required to use the SQS queue driver and SES mail driver (^3.0).",
+                "doctrine/dbal": "Required to rename columns and drop SQLite columns (^2.6).",
+                "ext-pcntl": "Required to use all features of the queue worker.",
+                "ext-posix": "Required to use all features of the queue worker.",
+                "fzaninotto/faker": "Required to use the eloquent factory builder (^1.4).",
+                "guzzlehttp/guzzle": "Required to use the Mailgun and Mandrill mail drivers and the ping methods on schedules (^6.0).",
+                "laravel/tinker": "Required to use the tinker console command (^1.0).",
+                "league/flysystem-aws-s3-v3": "Required to use the Flysystem S3 driver (^1.0).",
+                "league/flysystem-cached-adapter": "Required to use the Flysystem cache (^1.0).",
+                "league/flysystem-rackspace": "Required to use the Flysystem Rackspace driver (^1.0).",
+                "league/flysystem-sftp": "Required to use the Flysystem SFTP driver (^1.0).",
+                "moontoast/math": "Required to use ordered UUIDs (^1.1).",
+                "nexmo/client": "Required to use the Nexmo transport (^1.0).",
+                "pda/pheanstalk": "Required to use the beanstalk queue driver (^3.0).",
+                "predis/predis": "Required to use the redis cache and queue drivers (^1.0).",
+                "pusher/pusher-php-server": "Required to use the Pusher broadcast driver (^3.0).",
+                "symfony/css-selector": "Required to use some of the crawler integration testing tools (^4.1).",
+                "symfony/dom-crawler": "Required to use most of the crawler integration testing tools (^4.1).",
+                "symfony/psr-http-message-bridge": "Required to psr7 bridging features (^1.0)."
+>>>>>>> 2ca2e5726ef7e538fc1f644432fff88a97e72f98
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
+<<<<<<< HEAD
                     "dev-master": "5.6-dev"
+=======
+                    "dev-master": "5.7-dev"
+>>>>>>> 2ca2e5726ef7e538fc1f644432fff88a97e72f98
                 }
             },
             "autoload": {
@@ -874,7 +967,11 @@
                 "framework",
                 "laravel"
             ],
+<<<<<<< HEAD
             "time": "2018-02-07T15:36:40+00:00"
+=======
+            "time": "2018-09-06T14:01:05+00:00"
+>>>>>>> 2ca2e5726ef7e538fc1f644432fff88a97e72f98
         },
         {
             "name": "laravel/tinker",
@@ -941,6 +1038,7 @@
         },
         {
             "name": "laravelcollective/html",
+<<<<<<< HEAD
             "version": "v5.6.10",
             "source": {
                 "type": "git",
@@ -963,13 +1061,41 @@
             },
             "require-dev": {
                 "illuminate/database": "5.6.*",
+=======
+            "version": "v5.7.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/LaravelCollective/html.git",
+                "reference": "777b6d390811ba249255ed5750bf17a019cd88a5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/LaravelCollective/html/zipball/777b6d390811ba249255ed5750bf17a019cd88a5",
+                "reference": "777b6d390811ba249255ed5750bf17a019cd88a5",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/http": "5.7.*",
+                "illuminate/routing": "5.7.*",
+                "illuminate/session": "5.7.*",
+                "illuminate/support": "5.7.*",
+                "illuminate/view": "5.7.*",
+                "php": ">=7.1.3"
+            },
+            "require-dev": {
+                "illuminate/database": "5.7.*",
+>>>>>>> 2ca2e5726ef7e538fc1f644432fff88a97e72f98
                 "mockery/mockery": "~1.0",
                 "phpunit/phpunit": "~7.1"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
+<<<<<<< HEAD
                     "dev-master": "5.6-dev"
+=======
+                    "dev-master": "5.7-dev"
+>>>>>>> 2ca2e5726ef7e538fc1f644432fff88a97e72f98
                 },
                 "laravel": {
                     "providers": [
@@ -1005,6 +1131,7 @@
             ],
             "description": "HTML and Form Builders for the Laravel Framework",
             "homepage": "https://laravelcollective.com",
+<<<<<<< HEAD
             "time": "2018-06-18T15:04:16+00:00"
         },
         {
@@ -1023,12 +1150,35 @@
             },
             "require": {
                 "ext-fileinfo": "*",
+=======
+            "time": "2018-09-05T18:32:53+00:00"
+        },
+        {
+            "name": "league/flysystem",
+            "version": "1.0.46",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/flysystem.git",
+                "reference": "f3e0d925c18b92cf3ce84ea5cc58d62a1762a2b2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/f3e0d925c18b92cf3ce84ea5cc58d62a1762a2b2",
+                "reference": "f3e0d925c18b92cf3ce84ea5cc58d62a1762a2b2",
+                "shasum": ""
+            },
+            "require": {
+>>>>>>> 2ca2e5726ef7e538fc1f644432fff88a97e72f98
                 "php": ">=5.5.9"
             },
             "conflict": {
                 "league/flysystem-sftp": "<1.0.6"
             },
             "require-dev": {
+<<<<<<< HEAD
+=======
+                "ext-fileinfo": "*",
+>>>>>>> 2ca2e5726ef7e538fc1f644432fff88a97e72f98
                 "phpspec/phpspec": "^3.4",
                 "phpunit/phpunit": "^5.7.10"
             },
@@ -1089,7 +1239,11 @@
                 "sftp",
                 "storage"
             ],
+<<<<<<< HEAD
             "time": "2018-09-14T15:30:29+00:00"
+=======
+            "time": "2018-08-22T07:45:22+00:00"
+>>>>>>> 2ca2e5726ef7e538fc1f644432fff88a97e72f98
         },
         {
             "name": "monolog/monolog",
@@ -1226,6 +1380,7 @@
         },
         {
             "name": "nikic/php-parser",
+<<<<<<< HEAD
             "version": "v4.0.4",
             "source": {
                 "type": "git",
@@ -1236,6 +1391,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/fa6ee28600d21d49b2b4e1006b48426cec8e579c",
                 "reference": "fa6ee28600d21d49b2b4e1006b48426cec8e579c",
+=======
+            "version": "v4.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nikic/PHP-Parser.git",
+                "reference": "bd088dc940a418f09cda079a9b5c7c478890fb8d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/bd088dc940a418f09cda079a9b5c7c478890fb8d",
+                "reference": "bd088dc940a418f09cda079a9b5c7c478890fb8d",
+>>>>>>> 2ca2e5726ef7e538fc1f644432fff88a97e72f98
                 "shasum": ""
             },
             "require": {
@@ -1273,7 +1440,11 @@
                 "parser",
                 "php"
             ],
+<<<<<<< HEAD
             "time": "2018-09-18T07:03:24+00:00"
+=======
+            "time": "2018-07-15T17:25:16+00:00"
+>>>>>>> 2ca2e5726ef7e538fc1f644432fff88a97e72f98
         },
         {
             "name": "paragonie/random_compat",
@@ -1622,6 +1793,7 @@
         },
         {
             "name": "swiftmailer/swiftmailer",
+<<<<<<< HEAD
             "version": "v6.1.3",
             "source": {
                 "type": "git",
@@ -1632,6 +1804,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/8ddcb66ac10c392d3beb54829eef8ac1438595f4",
                 "reference": "8ddcb66ac10c392d3beb54829eef8ac1438595f4",
+=======
+            "version": "v6.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/swiftmailer/swiftmailer.git",
+                "reference": "7d760881d266d63c5e7a1155cbcf2ac656a31ca8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/7d760881d266d63c5e7a1155cbcf2ac656a31ca8",
+                "reference": "7d760881d266d63c5e7a1155cbcf2ac656a31ca8",
+>>>>>>> 2ca2e5726ef7e538fc1f644432fff88a97e72f98
                 "shasum": ""
             },
             "require": {
@@ -1677,7 +1861,11 @@
                 "mail",
                 "mailer"
             ],
+<<<<<<< HEAD
             "time": "2018-09-11T07:12:52+00:00"
+=======
+            "time": "2018-07-13T07:04:35+00:00"
+>>>>>>> 2ca2e5726ef7e538fc1f644432fff88a97e72f98
         },
         {
             "name": "symfony/console",
@@ -2767,6 +2955,7 @@
         },
         {
             "name": "filp/whoops",
+<<<<<<< HEAD
             "version": "2.2.1",
             "source": {
                 "type": "git",
@@ -2777,6 +2966,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/filp/whoops/zipball/e79cd403fb77fc8963a99ecc30e80ddd885b3311",
                 "reference": "e79cd403fb77fc8963a99ecc30e80ddd885b3311",
+=======
+            "version": "2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/filp/whoops.git",
+                "reference": "181c4502d8f34db7aed7bfe88d4f87875b8e947a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/181c4502d8f34db7aed7bfe88d4f87875b8e947a",
+                "reference": "181c4502d8f34db7aed7bfe88d4f87875b8e947a",
+>>>>>>> 2ca2e5726ef7e538fc1f644432fff88a97e72f98
                 "shasum": ""
             },
             "require": {
@@ -2795,7 +2996,11 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
+<<<<<<< HEAD
                     "dev-master": "2.2-dev"
+=======
+                    "dev-master": "2.1-dev"
+>>>>>>> 2ca2e5726ef7e538fc1f644432fff88a97e72f98
                 }
             },
             "autoload": {
@@ -2824,7 +3029,11 @@
                 "throwable",
                 "whoops"
             ],
+<<<<<<< HEAD
             "time": "2018-06-30T13:14:06+00:00"
+=======
+            "time": "2018-03-03T17:56:25+00:00"
+>>>>>>> 2ca2e5726ef7e538fc1f644432fff88a97e72f98
         },
         {
             "name": "fzaninotto/faker",
@@ -3483,6 +3692,7 @@
         },
         {
             "name": "phpunit/php-file-iterator",
+<<<<<<< HEAD
             "version": "2.0.2",
             "source": {
                 "type": "git",
@@ -3493,14 +3703,29 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/php-file-iterator/zipball/050bedf145a257b1ff02746c31894800e5122946",
                 "reference": "050bedf145a257b1ff02746c31894800e5122946",
+=======
+            "version": "2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/php-file-iterator.git",
+                "reference": "cecbc684605bb0cc288828eb5d65d93d5c676d3c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-file-iterator/zipball/cecbc684605bb0cc288828eb5d65d93d5c676d3c",
+                "reference": "cecbc684605bb0cc288828eb5d65d93d5c676d3c",
+>>>>>>> 2ca2e5726ef7e538fc1f644432fff88a97e72f98
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1"
             },
+<<<<<<< HEAD
             "require-dev": {
                 "phpunit/phpunit": "^7.1"
             },
+=======
+>>>>>>> 2ca2e5726ef7e538fc1f644432fff88a97e72f98
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -3529,7 +3754,11 @@
                 "filesystem",
                 "iterator"
             ],
+<<<<<<< HEAD
             "time": "2018-09-13T20:33:42+00:00"
+=======
+            "time": "2018-06-11T11:44:00+00:00"
+>>>>>>> 2ca2e5726ef7e538fc1f644432fff88a97e72f98
         },
         {
             "name": "phpunit/php-text-template",
@@ -3672,6 +3901,7 @@
         },
         {
             "name": "phpunit/phpunit",
+<<<<<<< HEAD
             "version": "7.3.5",
             "source": {
                 "type": "git",
@@ -3682,6 +3912,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/7b331efabbb628c518c408fdfcaf571156775de2",
                 "reference": "7b331efabbb628c518c408fdfcaf571156775de2",
+=======
+            "version": "7.3.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/phpunit.git",
+                "reference": "0356331bf62896dc56e3a15030b23b73f38b2935"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/0356331bf62896dc56e3a15030b23b73f38b2935",
+                "reference": "0356331bf62896dc56e3a15030b23b73f38b2935",
+>>>>>>> 2ca2e5726ef7e538fc1f644432fff88a97e72f98
                 "shasum": ""
             },
             "require": {
@@ -3752,7 +3994,11 @@
                 "testing",
                 "xunit"
             ],
+<<<<<<< HEAD
             "time": "2018-09-08T15:14:29+00:00"
+=======
+            "time": "2018-09-05T09:58:53+00:00"
+>>>>>>> 2ca2e5726ef7e538fc1f644432fff88a97e72f98
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",

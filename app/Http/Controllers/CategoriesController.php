@@ -2,10 +2,15 @@
 
 namespace App\Http\Controllers;
 
+<<<<<<< HEAD
 use App\Category;
 use Illuminate\Http\Request;
 
 
+=======
+use Illuminate\Http\Request;
+use App\Category;
+>>>>>>> 2ca2e5726ef7e538fc1f644432fff88a97e72f98
 
 class CategoriesController extends Controller
 {
@@ -65,7 +70,11 @@ class CategoriesController extends Controller
      */
     public function edit($id)
     {
+<<<<<<< HEAD
         
+=======
+        //
+>>>>>>> 2ca2e5726ef7e538fc1f644432fff88a97e72f98
     }
 
     /**
@@ -77,7 +86,11 @@ class CategoriesController extends Controller
      */
     public function update(Request $request, $id)
     {
+<<<<<<< HEAD
         
+=======
+        //
+>>>>>>> 2ca2e5726ef7e538fc1f644432fff88a97e72f98
     }
 
     /**

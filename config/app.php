@@ -147,8 +147,11 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
+<<<<<<< HEAD
         Gloudemans\Shoppingcart\ShoppingcartServiceProvider::class,
         
+=======
+>>>>>>> 2ca2e5726ef7e538fc1f644432fff88a97e72f98
 
         /*
          * Package Service Providers...
@@ -213,8 +216,11 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
+<<<<<<< HEAD
         'Cart' => Gloudemans\Shoppingcart\Facades\Cart::class,
         
+=======
+>>>>>>> 2ca2e5726ef7e538fc1f644432fff88a97e72f98
 
     ],
 

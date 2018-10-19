@@ -27,7 +27,11 @@
             <div class="small-3 columns">
                 <div class="item-wrapper">
                     <div class="img-wrapper">
+<<<<<<< HEAD
                         <a href=" {{ route('cart.edit', $product->id) }}" class="button expanded add-to-cart">
+=======
+                        <a class="button expanded add-to-cart">
+>>>>>>> 2ca2e5726ef7e538fc1f644432fff88a97e72f98
                             Add to Cart
                         </a>
                         <a href="#">

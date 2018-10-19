@@ -129,7 +129,10 @@ strong {
   color: #fff;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2ca2e5726ef7e538fc1f644432fff88a97e72f98
 @media only screen and (min-width: 40.063em) {
   .footer .columns:nth-child(n+2) {
     border-left: 1px solid #b3b3b3;
