@@ -23,15 +23,16 @@
        
         <!-- Latest Products-->
         <div class="row">
-            @forelse($products->take(4) as $product)
+            @forelse($products->chunk(4) as $chunk)
+            @foreach($chunk as $product)
             <div class="small-3 columns">
                 <div class="item-wrapper">
                     <div class="img-wrapper">
-<<<<<<< HEAD
-                        <a href=" {{ route('cart.edit', $product->id) }}" class="button expanded add-to-cart">
-=======
+
+                        <a href=" {{ route('cart.addItem', $product->id) }}" class="button expanded add-to-cart">
+
                         <a class="button expanded add-to-cart">
->>>>>>> 2ca2e5726ef7e538fc1f644432fff88a97e72f98
+
                             Add to Cart
                         </a>
                         <a href="#">
@@ -51,6 +52,7 @@
                     </p>
                 </div>
             </div>
+                @endforeach
             @empty
             <h4>No Products</h4>
             @endforelse

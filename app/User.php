@@ -28,12 +28,15 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
-<<<<<<< HEAD
+
 
     public function isAdmin()
     {
         return $this->admin;
     }
-=======
->>>>>>> 2ca2e5726ef7e538fc1f644432fff88a97e72f98
+    public function address()
+    {
+        return $this->hasMany(Adress::class);
+    }
+    
 }

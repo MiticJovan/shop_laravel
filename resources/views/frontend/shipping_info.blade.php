@@ -9,7 +9,7 @@
 	<h3>Shipping Info</h3>
 
 	
-	{!! Form::open(['route' => 'checkout.shipping', 'method' => 'post']) !!}
+	{!! Form::open(['route' => 'address.store', 'method' => 'post']) !!}
 	<div class="form-group">
 		{{   Form::label('addressline', 'Address Line:') }}
 		{!! Form::text('addressline', null, array('class' => 'formcontrol')) !!}

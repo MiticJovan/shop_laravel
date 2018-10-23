@@ -10,10 +10,10 @@ class Product extends Model
 
     public function category()
     {
-<<<<<<< HEAD
+
     	 return $this->belongsTo(Category::class);
-=======
+
     	$this->belongsTo(Category::class);
->>>>>>> 2ca2e5726ef7e538fc1f644432fff88a97e72f98
+
     }
 }
